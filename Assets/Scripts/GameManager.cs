@@ -1,15 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public float slowness = 10f;
+    bool gameHasEnded = false;
+    public Text score;
 
     public void EndGame()
     {
-        StartCoroutine(Restart());
+        if(gameHasEnded == false)
+        {
+            //ScorePanel.SetActive(true);
+            gameHasEnded = true;
+            StartCoroutine(Restart());
+        }
     }
 
     IEnumerator Restart()
@@ -22,7 +31,9 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         Time.fixedDeltaTime = Time.fixedDeltaTime * slowness;
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        PlayerPrefs.SetInt("LastScore", Convert.ToInt32(score.text));
+
+        SceneManager.LoadScene("Menu");
     }
 
 }
