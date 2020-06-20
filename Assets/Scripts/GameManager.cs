@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour
         Time.fixedDeltaTime = Time.fixedDeltaTime * slowness;
 
         PlayerPrefs.SetInt("LastScore", Convert.ToInt32(score.text));
+        if (PlayerPrefs.GetInt("LastScore") > PlayerPrefs.GetInt("HighestScore"))
+        {
+            PlayerPrefs.SetInt("HighestScore", PlayerPrefs.GetInt("LastScore"));
+        }
 
         SceneManager.LoadScene("Menu");
     }
