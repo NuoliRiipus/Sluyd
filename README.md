@@ -28,3 +28,38 @@ hem paylaşmak hem de ileride dönüp bakabilmek için buraya belgeleyeceğim.
 <hr>
 
 ![](Images/CameraMovement.png)
+
+1-*Yukarıda kameranın oyuncuyu x,y,z kordinatlarında takip etmesi ama rotasyonunu takip etmemesini sağladım*
+
+2-*Eğer yukarıdaki gibi public değişkenler belirlersek bunları aşağıdaki resimde olduğu gibi Unity'de inspector içinden değiştirebiliriz*
+
+![](Images/InspectorVariables.png)
+
+<hr>
+
+Buraya kadar olan bölümleri [Brackeys'in](https://www.youtube.com/watch?v=j48LtUkZRjU&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6&index=1) eğitim videolarına bakarak yaptım fakat daha sonra kendim oyuna farklı mekanikler ekledim. Aşağıda onları açıklayacağım. Yaptığım değişikliklerin kodlarına proje içinden ulaşabilirsiniz, scriptlerin isimlerinin açıklayıcı olduğunu düşünüyorum.
+
+<hr>
+
+![](Images/Spawn.gif)
+
+1-*Oyunun seviyelerini tek tek yapmak yerine bir spawn sisteminin daha iyi olacağını düşündüm.Bu yüzden ilk yaptığım değişiklik*
+*oyuncunun ilerlemesini durdurup, kutuların oyuncuya doğru gelmesini sağlamaktı. Böylece hem spawn kodlarını yazması kolaylaştı*
+*hem de oyunun seviyesinin zemini bir hayli kısalmış oldu.*
+
+2-*5 nokta belirledim ve bunlardan rastgele 2'sini her zaman boş olacak şekilde ayarladım.*
+
+3-*Oluşan blokların memory'de yer kaplamaması ve birikmemesi için oyuncuyu geçtikten bir süre sonra silinmesini sağladım*
+
+<hr>
+
+![](Images/SlowTime.gif)
+
+*-*Oyunun bittiğini kullanıcıya belirtmek için çarpışma anında oyunun yavaşlamasını sağladım*
+
+<hr>
+
+![](Images/Menu.png)
+
+Son olarak oyuna basit bir UI ve kullanıcıların başarılarını takip edebilmeleri için En yüksek skor kısmını ekledim.
+(*Farklı scene'ler arasında değişkenleri aktarabilmek için Unity'nin [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) modulünü kullandım*)
