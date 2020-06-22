@@ -3,6 +3,9 @@
 Uniy öğrenmek için yaptığım ve bitirdiğim ilk oyun. Oyunu yaparken öğrendiklerimden önemli gördüklerimi hem tekrar etmek
 hem paylaşmak hem de ileride dönüp bakabilmek için buraya belgeleyeceğim.
 
+[Oyunu oynamak için buraya tıklaya bilirsiniz](https://connect.unity.com/mg/other/slupy-v90)
+(*Normalde WebGL olarak yapmadığım için görüntüde çok ufak bozukluklar olabilir ve doğal olarak çıkma tuşu browser'da pek bi işe yaramıyor :)* )
+
 <hr>
 
 ![](Images/PlayerMovement.png)
