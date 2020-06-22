@@ -20,7 +20,7 @@ public class BlockMovement : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.z < -2f)
+        if (transform.position.z < -10f)
         {
             Destroy(gameObject);
         }
