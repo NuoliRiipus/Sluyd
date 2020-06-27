@@ -1,6 +1,6 @@
 # Sluyd
 
-Uniy öğrenmek için yaptığım ve bitirdiğim ilk oyun. Oyunu yaparken öğrendiklerimden önemli gördüklerimi hem tekrar etmek
+Unity öğrenmek için yaptığım ve bitirdiğim ilk oyun. Oyunu yaparken öğrendiklerimden önemli gördüklerimi hem tekrar etmek
 hem paylaşmak hem de ileride dönüp bakabilmek için buraya belgeleyeceğim.
 
 [Oyunu oynamak için buraya tıklaya bilirsiniz](https://connect.unity.com/mg/other/slupy-v90)
